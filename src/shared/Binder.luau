@@ -18,11 +18,13 @@ end
 
 -- Method: attach a form to the binder
 function Binder:AttachForm(form: table)
+    self.AttachedForms = self.AttachedForms or {}
     table.insert(self.AttachedForms, form)
 end
 
 -- Method: add a canonical document (e.g., manifest)
 function Binder:AddCanonicalDoc(doc: table)
+    self.CanonicalDocs = self.CanonicalDocs or {}
     table.insert(self.CanonicalDocs, doc)
 end
 

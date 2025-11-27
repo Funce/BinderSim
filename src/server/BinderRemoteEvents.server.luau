@@ -11,19 +11,19 @@ if not BinderEvents then
     BinderEvents.Parent = ReplicatedStorage
 
     -- Event: Create a new binder
-    local CreateBinderEvent = Instance.new("RemoteEvent")
-    CreateBinderEvent.Name = "CreateBinder"
-    CreateBinderEvent.Parent = BinderEvents
+    local CreateBinder = Instance.new("RemoteEvent")
+    CreateBinder.Name = "CreateBinder"
+    CreateBinder.Parent = BinderEvents
 
     -- Event: Attach a form to a binder
-    local AttachFormEvent = Instance.new("RemoteEvent")
-    AttachFormEvent.Name = "AttachForm"
-    AttachFormEvent.Parent = BinderEvents
+    local AttachForm = Instance.new("RemoteEvent")
+    AttachForm.Name = "AttachForm"
+    AttachForm.Parent = BinderEvents
 
     -- Event: Validate a scanned form (optional for later)
-    local ValidateFormEvent = Instance.new("RemoteEvent")
-    ValidateFormEvent.Name = "ValidateForm"
-    ValidateFormEvent.Parent = BinderEvents
+    local ValidateForm = Instance.new("RemoteEvent")
+    ValidateForm.Name = "ValidateForm"
+    ValidateForm.Parent = BinderEvents
 end
 
 return BinderEvents
